@@ -174,6 +174,7 @@ const InterestCalculator = () => {
           selected={startDate}
           onChange={(date) => setStartDate(date)}
           dateFormat="dd/MM/yyyy"
+          maxDate={new Date()}
           locale="vi"
           className="w-full p-2 border rounded bg-blue-200"
           placeholderText="dd/mm/yyyy"
@@ -185,6 +186,7 @@ const InterestCalculator = () => {
           selected={endDate}
           onChange={(date) => setEndDate(date)}
           dateFormat="dd/MM/yyyy"
+          minDate={startDate}
           locale="vi"
           className="w-full p-2 border rounded bg-blue-200"
           placeholderText="dd/mm/yyyy"
